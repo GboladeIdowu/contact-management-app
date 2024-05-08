@@ -1,6 +1,6 @@
 package com.management.contact.contactmanagementapp.dto;
 
-public record UserDto(
+public record UserUpdateDTO(
         String firstName,
         String lastName
 ) {

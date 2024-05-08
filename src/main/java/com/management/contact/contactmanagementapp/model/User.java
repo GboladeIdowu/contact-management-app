@@ -5,8 +5,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
 
-import java.util.List;
-
 @Data
 @NoArgsConstructor
 @Entity
@@ -26,6 +24,8 @@ public class User {
     @Column(updatable = false, unique = true, nullable = false)
     private String email;
 
-    @OneToMany
-    private List<Contact> contact;
+    private String password;
+
+//    @OneToMany
+//    private List<Contact> contact;
 }
